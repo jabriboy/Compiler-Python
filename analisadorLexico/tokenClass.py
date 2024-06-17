@@ -61,7 +61,7 @@ TOKEN_TYPES = [
 
     # CÓDIGO C
 
-    ('consCadeia', r'\"[a-zA-Z\s\S$_.0-9]*\"', 'C01'),
+    ('consCadeia', r'\"[a-zA-Z\s\S$_.0-9][a-zA-Z\s\S$_.0-9]*\"', 'C01'),
     ('consCaracter', r'\'[a-zA-Z]\'', 'C02'),
     ('consReal', r'\d*\.\d+|\d+\.\d*', 'C04'),
     ('consInteiro', r'\d+', 'C03'),

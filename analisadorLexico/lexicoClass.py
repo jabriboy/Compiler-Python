@@ -31,7 +31,6 @@ if __name__ == '__main__':
         'a'
         1.5
         3
-        
         // mesma formacao, porém, códigos diferentes
         nomfuncao
         nomprograma
