@@ -27,18 +27,16 @@ class Lexer:
 if __name__ == '__main__':
     lexer = Lexer(TOKEN_TYPES)
     code = '''
-        inteiro num1 := 10
-        real num2 := 3.5
+        "$conscadeia_."
+        'a'
+        1.5
+        3
+        
+        // mesma formacao, porém, códigos diferentes
+        nomfuncao
+        nomprograma
 
-        /* 
-            comentario muito grande
-        */
-
-        // soma num1 com num2
-
-        soma := num1 + num2
-
-        imprime(soma)
+        _variavel
         '''
     tokens = lexer.tokenize(code)
     for token in tokens:

@@ -61,12 +61,12 @@ TOKEN_TYPES = [
 
     # CÓDIGO C
 
-    ('consCadeia', r'cons', 'C01'),
-    ('consCaracter', r'cons', 'C02'),
+    ('consCadeia', r'\"[a-zA-Z\s\S$_.0-9]*\"', 'C01'),
+    ('consCaracter', r'\'[a-zA-Z]\'', 'C02'),
     ('consReal', r'\d*\.\d+|\d+\.\d*', 'C04'),
     ('consInteiro', r'\d+', 'C03'),
-    ('consFuncao', r'cons', 'C05'),
-    ('nomPrograma', r'cons', 'C06'),
+    ('nomFuncao', r'[a-zA-Z][a-zA-Z0-9]*', 'C05'),
+    ('nomPrograma', r'[a-zA-Z][a-zA-Z0-9]*', 'C06'),
     ('variavel', r'[a-zA-Z_][a-zA-Z_0-9]*', 'C07'),
 
     # CÓDIGO D
