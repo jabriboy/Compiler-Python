@@ -1,0 +1,14 @@
+Código da Equipe: 08
+Componentes:
+	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
+	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
+	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
+
+RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: MeuTeste.241
+----------------------------------------------------------------------------------------------
+Entrada: 1, Tipo Simbolo: "---", None, Átomo: nomFuncao, Código: C05, Lexeme: var1, Indice na Tab. de Simbolos: 0, Linha: [1, 2, 2, 2, 3]
+---------------------------------------------------------------------------------------------
+Entrada: 1, Tipo Simbolo: "---", None, Átomo: nomFuncao, Código: C05, Lexeme: var2, Indice na Tab. de Simbolos: 0, Linha: [1, 3, 3]
+---------------------------------------------------------------------------------------------
+Entrada: 1, Tipo Simbolo: "---", None, Átomo: nomFuncao, Código: C05, Lexeme: var3, Indice na Tab. de Simbolos: 0, Linha: [1]
+---------------------------------------------------------------------------------------------

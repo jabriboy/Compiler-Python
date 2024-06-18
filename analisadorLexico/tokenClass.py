@@ -1,6 +1,7 @@
 # Definição dos tipos de tokens
 TOKEN_TYPES = [
     # CÓDIGO X
+    ('enter', r'\r?\n|\r', 'X00'),
     ('comentarioLinha', r'//.*', 'X01'),
     ('comentarioNLinhas', r'/\*[\s\S]*?\*/', 'X02'),
     ('espaco', r'\s+', 'X03'),
@@ -82,10 +83,12 @@ TOKEN_TYPES = [
 
 # Classe que representa um token
 class Token:
-    def __init__(self, type, value, cod):
+    def __init__(self, type, value, cod, line, indice) -> None:
         self.type = type
         self.value = value
         self.cod = cod
+        self.lines = [line]
+        self.indice = indice
 
-    def __repr__(self):
-        return f'Token(Átomo: {self.type}, Valor: {self.value}, Código: {self.cod})'
+    def __repr__(self) -> str:
+        return f'Átomo: {self.type}, Código: {self.cod}, Lexeme: {self.value}, Indice na Tab. de Simbolos: {self.indice}, Linha: {self.lines}'
