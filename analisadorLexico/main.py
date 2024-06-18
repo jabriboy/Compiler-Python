@@ -50,7 +50,7 @@ RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: {nome}.241
 	
 
 		for i in tab:
-			arquivoTab.write(f'\nEntrada: 1, Tipo Simbolo: "---", {simbolo}, {i}\n---------------------------------------------------------------------------------------------')
+			arquivoTab.write(f'\nEntrada: 1, Tipo Simbolo: "---", {i}\n---------------------------------------------------------------------------------------------')
 	
 
 	# Leitura do Arquivo .LEX
