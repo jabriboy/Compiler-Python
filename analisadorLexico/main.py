@@ -59,6 +59,6 @@ RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: {nome}.241
 
 			print(arqTab)
 
-
-createLex(lex)
-createTab(tab)
+if __name__ == "__main__":
+	createLex(lex)
+	createTab(tab)

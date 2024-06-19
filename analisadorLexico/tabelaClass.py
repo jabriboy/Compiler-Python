@@ -14,7 +14,7 @@ class Tabela:
 	def addLine(self, lexeme: object) -> bool:
 		for lex in self.table:
 			if lex.value == lexeme.value:
-				if lex.line.length() < 5:
+				if len(lex.lines) < 5:
 					lex.lines.append(lexeme.lines[0])
 					return True
 		return False
@@ -28,6 +28,7 @@ class Tabela:
 		for lex in self.table:
 			pos += 1
 			if lex.value == lexeme.value:
+				self.table[pos-1].indice = pos
 				return pos
 		return None
 
