@@ -1,6 +1,5 @@
 from lexicoClass import Lexer
-from tabelaClass import Tabela
-from tokenClass import Token, TOKEN_TYPES
+from tokenClass import TOKEN_TYPES
 
 nome = input('Nome do arquivo que deseja compilar: ')
 
@@ -46,11 +45,11 @@ Componentes:
 	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
 
 RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: {nome}.241
-----------------------------------------------------------------------------------------------''')
+---------------------------------------------------------------------------------------------------------------------------------''')
 	
 
 		for i in tab:
-			arquivoTab.write(f'\nEntrada: 1, Tipo Simbolo: "---", {i}\n---------------------------------------------------------------------------------------------')
+			arquivoTab.write(f'\nEntrada: 1, Tipo Simbolo: "---", {i}\n---------------------------------------------------------------------------------------------------------------------------------')
 	
 
 	# Leitura do Arquivo .LEX
@@ -58,6 +57,8 @@ RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: {nome}.241
 			arqTab = arquivoTab.read()
 
 			print(arqTab)
+
+
 
 if __name__ == "__main__":
 	createLex(lex)

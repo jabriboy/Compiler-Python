@@ -1,9 +1,12 @@
 programa programa1
-funcoes funcoes1(){
+funcoes funcoes1(inteiro a, real b){
+	real var1 := b
+	inteiro var2 := a
 
+	real var3 := var1 + 2.5
+	inteiro var4 := var2 * 2
+
+	retorna var4
 }
-var1 := 1.5
-var2 := 20
 
-var3 := var1 + 2.5
-var4 := var2 * 2
+funcoes1(20, 2.5)
