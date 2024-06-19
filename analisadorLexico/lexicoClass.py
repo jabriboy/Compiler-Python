@@ -41,7 +41,7 @@ class Lexer:
 if __name__ == '__main__':
     lexer= Lexer(TOKEN_TYPES)
     code = '''
-        var1 var2 var3
+        programa
         '''
     tokens, tabela = lexer.tokenize(code)
     for token in tokens:

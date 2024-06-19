@@ -2,13 +2,13 @@
 lexic compiler for a made up programming language called *Perpetuum2024.1*, developed to a Compiler class.
 ## Files:
 
-- ### ==**MeuTeste.241**== is the text document that simulates the code.  
-- ### ==__Main.py__== file generates 2 more files: MeuTeste.LEX and MeuTeste.TAB.  
-- ### ==tokenClass.py== is the class that create the tokens, also, the file that has the *__TOKEN_TYPES__*
-- ### ==lexicoClass.py== is the class that receive the code and separate it into tokens, that later will be put in the *.LEX* or the *.TAB* by the *Main.py** file.
-- ### ==tabelaClass.py== is the especial class that handles everything about the table of simbols, and stores the table itself.
+- ### == __MeuTeste.241__ == is the text document that simulates the code.  
+- ### == __Main.py__ == file generates 2 more files: MeuTeste.LEX and MeuTeste.TAB.  
+- ### == __tokenClass.py__ == is the class that create the tokens, also, the file that has the *TOKEN_TYPES*
+- ### == __lexicoClass.py__ == is the class that receive the code and separate it into tokens, that later will be put in the *.LEX* or the *.TAB* by the *Main.py** file.
+- ### == __tabelaClass.py__ == is the especial class that handles everything about the table of simbols, and stores the table itself.
 
-### Perpetuum2024.1 code exemple:
+## Perpetuum2024.1 code exemple:
 ```Perpetuum2024.1
 programa programa1
 funcoes funcoes1(inteiro a, real b){
