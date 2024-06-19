@@ -17,8 +17,8 @@ def createLex(lex: list[object]) -> None:
 f'''Código da Equipe: 08
 Componentes:
 	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
-	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
-	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
+	Maria Eduarda Benfica Gonçalves; maria.g@aln.senaicimatec.edu.br; +55 (71) 98238-8540
+	Ricardo Alexandre Santos da Silva; ricardo.silva@aln.senaicimatec.edu.br; +55 (71) 99931-9500
 
 RELATÓRIO DA ANÁLISE LÉXICA. Texto fonte analisado: {nome}.241
 ----------------------------------------------------------------------------------------------''')
@@ -41,8 +41,8 @@ def createTab(tab: list[object]) -> None:
 f'''Código da Equipe: 08
 Componentes:
 	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
-	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
-	Gabriel de Araujo Santos Rocha; gabriel.rocha@aln.senaicimatec.edu.br; +55 (71) 98526-8660
+	Maria Eduarda Benfica Gonçalves; maria.g@aln.senaicimatec.edu.br; +55 (71) 98238-8540
+	Ricardo Alexandre Santos da Silva; ricardo.silva@aln.senaicimatec.edu.br; +55 (71) 99931-9500
 
 RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: {nome}.241
 ---------------------------------------------------------------------------------------------------------------------------------''')
