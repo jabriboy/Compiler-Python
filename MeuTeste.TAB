@@ -5,26 +5,68 @@ Componentes:
 	Ricardo Alexandre Santos da Silva; ricardo.silva@aln.senaicimatec.edu.br; +55 (71) 99931-9500
 
 RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: MeuTeste.241
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: nomPrograma, Código: C06, Lexeme: programa1, Indice na Tab. de Simbolos: 1, Linha: [1]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: nomFuncao, Código: C05, Lexeme: funcoes1, Indice na Tab. de Simbolos: 2, Linha: [2, 12]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: variavel, Código: C07, Lexeme: a, Indice na Tab. de Simbolos: 3, Linha: [2, 4]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: variavel, Código: C07, Lexeme: b, Indice na Tab. de Simbolos: 4, Linha: [2, 3]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: variavel, Código: C07, Lexeme: var1, Indice na Tab. de Simbolos: 5, Linha: [3, 6]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: variavel, Código: C07, Lexeme: var2, Indice na Tab. de Simbolos: 6, Linha: [4, 7]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: variavel, Código: C07, Lexeme: var3, Indice na Tab. de Simbolos: 7, Linha: [6]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: consReal, Código: C04, Lexeme: 2.5, Indice na Tab. de Simbolos: 8, Linha: [6, 12]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: variavel, Código: C07, Lexeme: var4, Indice na Tab. de Simbolos: 9, Linha: [7, 9]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: consInteiro, Código: C03, Lexeme: 2, Indice na Tab. de Simbolos: 10, Linha: [7]
----------------------------------------------------------------------------------------------------------------------------------
-Entrada: 1, Tipo Simbolo: "---", Átomo: consInteiro, Código: C03, Lexeme: 20, Indice na Tab. de Simbolos: 11, Linha: [12]
----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C06, Lexeme: programa1, 
+QntCharAntesTrunc: 9, QntCharDepoisTrunc: 9, 
+Tipo Simbolo: ---, Linhas: [1],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C05, Lexeme: funcoes1, 
+QntCharAntesTrunc: 8, QntCharDepoisTrunc: 8, 
+Tipo Simbolo: ---, Linhas: [2, 12],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: a, 
+QntCharAntesTrunc: 1, QntCharDepoisTrunc: 1, 
+Tipo Simbolo: ---, Linhas: [2, 4],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: b, 
+QntCharAntesTrunc: 1, QntCharDepoisTrunc: 1, 
+Tipo Simbolo: ---, Linhas: [2, 3],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: var1, 
+QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
+Tipo Simbolo: ---, Linhas: [3, 6],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: var2, 
+QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
+Tipo Simbolo: ---, Linhas: [4, 7, 14],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: var3, 
+QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
+Tipo Simbolo: ---, Linhas: [6],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C04, Lexeme: 2.5, 
+QntCharAntesTrunc: 3, QntCharDepoisTrunc: 3, 
+Tipo Simbolo: ---, Linhas: [6, 12],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: var4, 
+QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
+Tipo Simbolo: ---, Linhas: [7, 9],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C03, Lexeme: 2, 
+QntCharAntesTrunc: 1, QntCharDepoisTrunc: 1, 
+Tipo Simbolo: ---, Linhas: [7],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C03, Lexeme: 20, 
+QntCharAntesTrunc: 2, QntCharDepoisTrunc: 2, 
+Tipo Simbolo: ---, Linhas: [12],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C03, Lexeme: 10, 
+QntCharAntesTrunc: 2, QntCharDepoisTrunc: 2, 
+Tipo Simbolo: ---, Linhas: [14],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: ola, 
+QntCharAntesTrunc: 3, QntCharDepoisTrunc: 3, 
+Tipo Simbolo: ---, Linhas: [15],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C01, Lexeme: "ola", 
+QntCharAntesTrunc: 3, QntCharDepoisTrunc: 3, 
+Tipo Simbolo: ---, Linhas: [15],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C07, Lexeme: text2, 
+QntCharAntesTrunc: 5, QntCharDepoisTrunc: 5, 
+Tipo Simbolo: ---, Linhas: [16],
+------------------------------------------------------------------------------------------------------
+Entrada: 1, Codigo: C01, Lexeme: "qwertyuiopasd_fghjklzxcvbnmqw, 
+QntCharAntesTrunc: 36, QntCharDepoisTrunc: 29, 
+Tipo Simbolo: ---, Linhas: [16],
+------------------------------------------------------------------------------------------------------

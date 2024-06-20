@@ -17,20 +17,23 @@ class Lexer:
                 match = pattern.match(text, pos)
                 if match:
                     value = match.group(0)
+                    # print(value)
                     if token_type == 'enter':
                         lines += 1
                     if token_type not in ['espaco', 'comentarioLinha', 'comentarioNLinhas', 'desconhecido', 'enter']:  # Ignorando espaços em branco
-                        if match.span()[1] - match.span()[0] <= 30:
-                            indice = 0
-                            token = Token(token_type, value, cod, lines, indice)
+                        indice = 0
+                        trunc = test = value
+                        if len(test) > 30:
+                            trunc = value[:30]
+                        token = Token(token_type, value, cod, lines, indice, trunc)
 
-                            if not self.tabela.checkTable(token) and cod[0] not in ['A', 'B', 'X', 'D', 'Z']:
-                                self.tabela.addTable(token)
-                            else:
-                                self.tabela.addLine(token)
-                            
-                            token.indice = self.tabela.getIndice(token) 
-                            self.tokens.append(token)
+                        if not self.tabela.checkTable(token) and cod[0] not in ['A', 'B', 'X', 'D', 'Z']:
+                            self.tabela.addTable(token)
+                        else:
+                            self.tabela.addLine(token)
+                        
+                        token.indice = self.tabela.getIndice(token) 
+                        self.tokens.append(token)
                     pos = match.end(0)
                     break
             if not match:
@@ -41,7 +44,8 @@ class Lexer:
 if __name__ == '__main__':
     lexer= Lexer(TOKEN_TYPES)
     code = '''
-        programa
+        "qwertyuiopasdfghjklzxcvbnmqwer"
+        "ola"
         '''
     tokens, tabela = lexer.tokenize(code)
     for token in tokens:

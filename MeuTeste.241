@@ -10,3 +10,7 @@ funcoes funcoes1(inteiro a, real b){
 }
 
 funcoes1(20, 2.5)
+
+var2 := 10
+cadeia ola := "ola"
+cadeia text2 := "qwertyuiopasd_fghjklzxcvbnmqwer12345"

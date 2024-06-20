@@ -20,7 +20,7 @@ class Tabela:
 		return False
 
 	def addTable(self, lexeme: object) -> None:
-		lex = Token(lexeme.type, lexeme.value, lexeme.cod, lexeme.lines[0], lexeme.indice)
+		lex = Token(lexeme.type, lexeme.value, lexeme.cod, lexeme.lines[0], lexeme.indice, lexeme.trunc)
 		self.table.append(lex)
 
 	def getIndice(self, lexeme: object) -> Union[int, None]:

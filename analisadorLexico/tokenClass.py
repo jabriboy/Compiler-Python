@@ -62,7 +62,7 @@ TOKEN_TYPES = [
 
     # CÓDIGO C
 
-    ('consCadeia', r'\"[a-zA-Z\s\S$_.0-9][a-zA-Z\s\S$_.0-9]*\"', 'C01'),
+    ('consCadeia', r'"[^"]*"', 'C01'),
     ('consCaracter', r'\'[a-zA-Z]\'', 'C02'),
     ('consReal', r'\d*\.\d+|\d+\.\d*', 'C04'),
     ('consInteiro', r'\d+', 'C03'),
@@ -83,12 +83,13 @@ TOKEN_TYPES = [
 
 # Classe que representa um token
 class Token:
-    def __init__(self, type, value, cod, line, indice) -> None:
+    def __init__(self, type, value, cod, line, indice, trunc) -> None:
         self.type = type
         self.value = value
         self.cod = cod
         self.lines = [line]
         self.indice = indice
+        self.trunc = trunc
 
     def __repr__(self) -> str:
-        return f'Átomo: {self.type}, Código: {self.cod}, Lexeme: {self.value}, Indice na Tab. de Simbolos: {self.indice}, Linha: {self.lines}'
+        return f'Lexeme: {self.trunc}, Código: {self.cod}, Indice na Tab. de Simbolos: {self.indice}, Linha: {self.lines[0]}'
