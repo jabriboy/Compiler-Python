@@ -26,7 +26,6 @@ RELATÓRIO DA ANÁLISE LÉXICA. Texto fonte analisado: {nome}.241
 		for i in lex:
 			arquivoLex.write(f'\n{i}\n---------------------------------------------------------------------------------------------')
 	
-
 	# Leitura do Arquivo .LEX
 	with open(f'./arquivosOutput/{nome}.LEX', 'r') as arquivoLex:
 			arqLex = arquivoLex.read()
@@ -45,15 +44,13 @@ Componentes:
 	Ricardo Alexandre Santos da Silva; ricardo.silva@aln.senaicimatec.edu.br; +55 (71) 99931-9500
 
 RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: {nome}.241
-------------------------------------------------------------------------------------------------------''')
-	
+------------------------------------------------------------------------------------------------------''')	
 
 		for i in tab:
 			value = i.value.replace('"', '')
 			trunc = i.trunc.replace('"', '')
-			arquivoTab.write(f'\nEntrada: 1, Codigo: {i.cod}, Lexeme: {i.trunc}, \nQntCharAntesTrunc: {len(value)}, QntCharDepoisTrunc: {len(trunc)}, \nTipo Simbolo: ---, Linhas: {i.lines},\n------------------------------------------------------------------------------------------------------')
+			arquivoTab.write(f'\nEntrada: 1, Codigo: {i.cod}, Lexeme: {i.trunc}, \nQntCharAntesTrunc: {len(value)}, QntCharDepoisTrunc: {len(trunc)}, \nTipo Simbolo: {i.tipo}, Linhas: {i.lines},\n------------------------------------------------------------------------------------------------------')
 	
-
 	# Leitura do Arquivo .LEX
 	with open(f'./arquivosOutput/{nome}.TAB', 'r') as arquivoTab:
 			arqTab = arquivoTab.read()

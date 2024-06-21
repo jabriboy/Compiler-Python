@@ -37,7 +37,7 @@ class Lexer:
                                 trunc += '"'
                             else:
                                 trunc = value[:30]
-                        token = Token(token_type, value, cod, lines, indice, trunc)
+                        token = Token(token_type, value, cod, lines, indice, trunc, '---')
 
                         if not self.tabela.checkTable(token) and cod[0] not in ['A', 'B', 'X', 'D', 'Z']:
                             self.tabela.addTable(token)
@@ -59,6 +59,8 @@ if __name__ == '__main__':
         programa nomeProg
         funcoes nomeFunc
         variavel
+        sub
+        "$ cadeia"
         '''
     tokens, tabela = lexer.tokenize(code)
     for token in tokens:

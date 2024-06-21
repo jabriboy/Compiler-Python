@@ -6,67 +6,23 @@ Componentes:
 
 RELATÓRIO DA TABELA DE SÍMBOLOS. Texto fonte analisado: MeuTeste.241
 ------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: programa1, 
-QntCharAntesTrunc: 9, QntCharDepoisTrunc: 9, 
-Tipo Simbolo: ---, Linhas: [1],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: funcoes1, 
-QntCharAntesTrunc: 8, QntCharDepoisTrunc: 8, 
-Tipo Simbolo: ---, Linhas: [2, 12],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: a, 
-QntCharAntesTrunc: 1, QntCharDepoisTrunc: 1, 
-Tipo Simbolo: ---, Linhas: [2, 4],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: b, 
-QntCharAntesTrunc: 1, QntCharDepoisTrunc: 1, 
-Tipo Simbolo: ---, Linhas: [2, 3],
-------------------------------------------------------------------------------------------------------
 Entrada: 1, Codigo: C07, Lexeme: var1, 
 QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
-Tipo Simbolo: ---, Linhas: [3, 6],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: var2, 
-QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
-Tipo Simbolo: ---, Linhas: [4, 7, 14],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: var3, 
-QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
-Tipo Simbolo: ---, Linhas: [6],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C04, Lexeme: 2.5, 
-QntCharAntesTrunc: 3, QntCharDepoisTrunc: 3, 
-Tipo Simbolo: ---, Linhas: [6, 12],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: var4, 
-QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
-Tipo Simbolo: ---, Linhas: [7, 9],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C03, Lexeme: 2, 
-QntCharAntesTrunc: 1, QntCharDepoisTrunc: 1, 
-Tipo Simbolo: ---, Linhas: [7],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C03, Lexeme: 20, 
-QntCharAntesTrunc: 2, QntCharDepoisTrunc: 2, 
-Tipo Simbolo: ---, Linhas: [12],
+Tipo Simbolo: VOI, Linhas: [1, 4],
 ------------------------------------------------------------------------------------------------------
 Entrada: 1, Codigo: C03, Lexeme: 10, 
 QntCharAntesTrunc: 2, QntCharDepoisTrunc: 2, 
-Tipo Simbolo: ---, Linhas: [14],
+Tipo Simbolo: INT, Linhas: [1],
 ------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: ola, 
-QntCharAntesTrunc: 3, QntCharDepoisTrunc: 3, 
-Tipo Simbolo: ---, Linhas: [15],
+Entrada: 1, Codigo: C07, Lexeme: var2, 
+QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
+Tipo Simbolo: VOI, Linhas: [2, 4],
 ------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C01, Lexeme: "ola", 
-QntCharAntesTrunc: 3, QntCharDepoisTrunc: 3, 
-Tipo Simbolo: ---, Linhas: [15],
+Entrada: 1, Codigo: C03, Lexeme: 20, 
+QntCharAntesTrunc: 2, QntCharDepoisTrunc: 2, 
+Tipo Simbolo: INT, Linhas: [2],
 ------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C07, Lexeme: text2, 
-QntCharAntesTrunc: 5, QntCharDepoisTrunc: 5, 
-Tipo Simbolo: ---, Linhas: [16],
-------------------------------------------------------------------------------------------------------
-Entrada: 1, Codigo: C01, Lexeme: "qwertyuiopasd_fghjklzxcvbnmqw", 
-QntCharAntesTrunc: 36, QntCharDepoisTrunc: 29, 
-Tipo Simbolo: ---, Linhas: [16],
+Entrada: 1, Codigo: C07, Lexeme: var3, 
+QntCharAntesTrunc: 4, QntCharDepoisTrunc: 4, 
+Tipo Simbolo: VOI, Linhas: [4, 6],
 ------------------------------------------------------------------------------------------------------

@@ -20,8 +20,22 @@ class Tabela:
 		return False
 
 	def addTable(self, lexeme: object) -> None:
-		lex = Token(lexeme.type, lexeme.value, lexeme.cod, lexeme.lines[0], lexeme.indice, lexeme.trunc)
+		tipoSimbolo = self.getTipoSimbolo(lexeme)
+		lex = Token(lexeme.type, lexeme.value, lexeme.cod, lexeme.lines[0], lexeme.indice, lexeme.trunc, tipoSimbolo)
 		self.table.append(lex)
+
+	def getTipoSimbolo(self, lexeme: object):
+		if lexeme.type == 'consCadeia':
+			return 'STR'
+		elif lexeme.type == 'consCaracter':
+			return 'CHC'
+		elif lexeme.type == 'consReal':
+			return 'PFO'
+		elif lexeme.type == 'consInteiro':
+			return 'INT'
+		else:
+			return 'VOI'
+
 
 	def getIndice(self, lexeme: object) -> Union[int, None]:
 		pos = 0

@@ -6,7 +6,7 @@ TOKEN_TYPES = [
     ('comentarioNLinhas', r'/\*[\s\S]*?\*/', 'X02'),
     ('espaco', r'\s+', 'X03'),
 
-    # CÓDIGO A
+    # CÓDIGO A (palavras reservadas)
     ('cadeia', r'cadeia(?![\w_])', 'A01'),
     ('caracter', r'caracter(?![\w_])', 'A02'),
     ('declaracoes', r'declaracoes(?![\w_])', 'A03'),
@@ -34,8 +34,7 @@ TOKEN_TYPES = [
     ('true', r'true(?![\w_])', 'A25'),
     ('vazio', r'vazio(?![\w_])', 'A26'),
 
-    # CÓDIGO B
-
+    # CÓDIGO B (simbolos reservados)
     ('%', r'%', 'B01'),
     ('(', r'\(', 'B02'),
     (')', r'\)', 'B03'),
@@ -60,8 +59,7 @@ TOKEN_TYPES = [
     ('>=', r'>=', 'B22'),
     ('>', r'>', 'B21'),
 
-    # CÓDIGO C
-
+    # CÓDIGO C (Identificadores)
     ('consCadeia', r'"[^"]*"', 'C01'),
     ('consCaracter', r'\'[a-zA-Z]\'', 'C02'),
     ('consReal', r'\d*\.\d+|\d+\.\d*', 'C04'),
@@ -71,25 +69,24 @@ TOKEN_TYPES = [
     ('nomPrograma', r'[a-zA-Z][a-zA-Z0-9]*', 'C06'),
 
     # CÓDIGO D
+    # ('subMaquina1', r'sub', 'D01'),
+    # ('subMaquina2', r'sub', 'D02'),
+    # ('subMaquina3', r'sub', 'D03'),
 
-    ('subMaquina1', r'sub', 'D01'),
-    ('subMaquina2', r'sub', 'D02'),
-    ('subMaquina3', r'sub', 'D03'),
-
-    # CÓDIGO Z
-
+    # CÓDIGO Z (caracteres não reconhecido ex: ç, á, ô...)
     ('desconhecido', r'.', 'Z01'),
 ]
 
 # Classe que representa um token
 class Token:
-    def __init__(self, type, value, cod, line, indice, trunc) -> None:
+    def __init__(self, type, value, cod, line, indice, trunc, tipo) -> None:
         self.type = type
         self.value = value
         self.cod = cod
         self.lines = [line]
         self.indice = indice
         self.trunc = trunc
+        self.tipo = tipo
 
     def __repr__(self) -> str:
         return f'Lexeme: {self.trunc}, Código: {self.cod}, Indice na Tab. de Simbolos: {self.indice}, Linha: {self.lines[0]}'
